@@ -17,12 +17,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
-          python-version: pypy3
-
-      - name: Setup PIP
-        run: |
-          brew install openssl
-          pypy3 -m pip install --upgrade pip
+          python-version: "3.x"
 
       # - name: Setup Python cache
       #   uses: actions/cache@v2
@@ -36,4 +31,4 @@ jobs:
       - name: Install Python dependencies
         # if: steps.cache-python-cache.outputs.cache-hit != 'true'
         run: |
-          pypy3 -m pip install -r requirements.txt
+          python3 -m pip install -r requirements.txt
