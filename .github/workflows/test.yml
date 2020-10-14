@@ -7,7 +7,7 @@ on:
 
 jobs:
   build_macos:
-    name: Build for MacOS
+    name: Test MacOS
     runs-on: macOS-latest
 
     steps:
