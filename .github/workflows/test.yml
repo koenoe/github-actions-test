@@ -9,7 +9,6 @@ jobs:
   build_macos:
     name: Test MacOS
     runs-on: macOS-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v2
